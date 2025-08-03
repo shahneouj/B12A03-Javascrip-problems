@@ -6,7 +6,7 @@ console.log(area / 2);
 
 
 /** Problem -02 ( Cycle or Laptop ) */
-var money = 45000;
+var money = 10000;
 //write your code here
 
 if (money <= 9999) {
@@ -25,9 +25,30 @@ var lastDay = 11;
 
 for (let i = 1; i <= lastDay; i++) {
   if (i % 3 == 0) {
-    console.log(`${i}-medicine`);
+    console.log(i + " " + "- medicine");
   } else {
-    console.log(`${i}-rest`);
+    console.log(i + " " + "- rest");
   }
 
 }
+
+
+/** Problem 04 - (Delete / Store) */
+var fileName = "pdfData.jpg";
+//write your code here
+var charArray = fileName.split('')[0];
+var fileFormat = fileName.split('.')[1];
+var fileFormatName = [".pdf", ".docx"]
+
+if (charArray == "#" || fileFormatName.includes("." + fileFormat)) {
+  console.log("Store");
+} else {
+  console.log("Delete");
+}
+
+
+/** Problem 05 - ( PH Email Generator )  */
+var student = { name: "jhankar", roll: 1014, department: "cse" };
+//write your code here
+var email = student.name.concat(student.roll).concat(".").concat(student.department).concat("@ph.ac.bd")
+console.log(email);
