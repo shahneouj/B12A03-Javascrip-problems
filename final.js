@@ -52,3 +52,16 @@ var student = { name: "jhankar", roll: 1014, department: "cse" };
 //write your code here
 var email = student.name.concat(student.roll).concat(".").concat(student.department).concat("@ph.ac.bd")
 console.log(email);
+
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalary = 45000;
+//write your code here
+var increaseRate = 5;
+for (var i = 1; i <= experience; i++) {
+  var startingSalary = startingSalary + startingSalary * (increaseRate / 100);
+  var newSalary = startingSalary;
+
+}
+console.log(newSalary.toFixed(2));
