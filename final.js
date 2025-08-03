@@ -23,7 +23,7 @@ if (money <= 9999) {
 var lastDay = 11;
 //write your code here
 
-for (let i = 1; i <= lastDay; i++) {
+for (var i = 1; i <= lastDay; i++) {
   if (i % 3 == 0) {
     console.log(i + " " + "- medicine");
   } else {
